@@ -3,14 +3,14 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget
 
-# Qwidget이 부모 클래스
+# QWdget이 부모 클래스
 # 부모 클래스를 상속 받아서 MyApp이라는 자식 클래스를 생성
 # 부모의 특성을 받아서 내가 무언가 살짝 바꾸고 싶을 때
 class MyApp(QWidget):
 
-    # 생성자
+    # 생성자. 아무것도 입력되어 있지 않은 기본 상태를 마련해줌
     def __init__(self):
-        #Super는 부모 클래스를 가리킴. 부모 클래스의 초기 생성자. qwidget 클래스의 init 함수 호출
+        #Super는 부모 클래스를 가리킴. 부모 클래스의 초기 생성자. QWidget 클래스의 init 함수 호출
         super().__init__()
         #myapp 자식 클래스와 부모 클래스의 차이점. initUI라는 함수
         self.initUI()
@@ -22,6 +22,7 @@ class MyApp(QWidget):
         self.move(500, 500)
         #창의 크기 설정
         self.resize(600, 600)
+        #위의 설정 대로 창을 생성
         self.show()
 
 
