@@ -21,6 +21,7 @@ class MyApp(QMainWindow):
 
         menubar = self.menuBar()
         menubar.setNativeMenuBar(False)
+        #파일열기 추가하고 싶으면 에드파일
         filemenu = menubar.addMenu('&File')
         filemenu.addAction(exitAction)
 
