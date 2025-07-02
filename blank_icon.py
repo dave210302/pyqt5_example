@@ -13,7 +13,7 @@ class MyApp(QWidget):
 
   def initUI(self):
       self.setWindowTitle('Icon')
-      self.setWindowIcon(QIcon('blank_icon.png'))
+      self.setWindowIcon(QIcon('icon/blank_icon.png'))
       self.setGeometry(300, 300, 300, 200)
       self.show()
 
